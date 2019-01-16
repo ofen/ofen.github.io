@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 479.99998 480.00001"
+   id="svg3476"
+   version="1.1"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="css-logo.svg">
+  <defs
+     id="defs3478" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="36.671806"
+     inkscape:cy="131.73663"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true" />
+  <metadata
+     id="metadata3481">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Calque 1">
+    <g
+       id="g820">
+      <path
+         transform="scale(0.93749999)"
+         id="path825"
+         d="M 256 0 A 256 256 0 0 0 0 256 A 256 256 0 0 0 256 512 A 256 256 0 0 0 512 256 A 256 256 0 0 0 256 0 z M 183.26562 62.041016 L 224.93555 62.041016 L 224.93555 79.466797 L 200.69141 79.466797 L 200.69141 96.892578 L 224.93555 96.892578 L 224.93555 114.31836 L 183.26562 114.31836 L 183.26562 62.041016 z M 233.26953 62.041016 L 274.94141 62.041016 L 274.94141 77.193359 L 250.69727 77.193359 L 250.69727 80.224609 L 274.94141 80.224609 L 274.94141 115.07617 L 233.26953 115.07617 L 233.26953 99.166016 L 257.51562 99.166016 L 257.51562 96.134766 L 233.26953 96.134766 L 233.26953 62.041016 z M 283.27539 62.041016 L 324.94727 62.041016 L 324.94727 77.193359 L 300.70117 77.193359 L 300.70117 80.224609 L 324.94727 80.224609 L 324.94727 115.07617 L 283.27539 115.07617 L 283.27539 99.166016 L 307.51953 99.166016 L 307.51953 96.134766 L 283.27539 96.134766 L 283.27539 62.041016 z M 118.58594 138.27539 L 393.41406 138.27539 L 368.375 418.75781 L 255.83203 449.95898 L 143.59766 418.80273 L 118.58594 138.27539 z "
+         style="display:inline;fill:#2965f1;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path841"
+         d="m 159.11966,183.3927 2.93212,32.25539 H 285.3391 l -2.93496,33.02961 H 164.92849 l 2.89091,32.25469 h 111.78758 l -3.74398,41.83236 -35.863,9.67968 -36.06402,-9.65909 -2.2964,-25.7249 H 169.2606 l 4.51892,50.64503 L 240,366.00633 306.01307,347.70547 320.68785,183.3927 Z"
+         style="fill:#2965f1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
