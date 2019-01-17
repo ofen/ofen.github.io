@@ -17,10 +17,13 @@ a, a:visited, a:hover, a:active {
 
 .info p {
     color: #7D8186;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-right: 25px;
 }
 
@@ -33,9 +36,14 @@ a, a:visited, a:hover, a:active {
     margin-right: -25px;
     padding: 5px;
     box-shadow: 0 2px 5px 0 #757575;
-} 
+    filter: grayscale(100%);
+}
 
-
+.icons img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1, 1.1);
+    z-index: 10;
+}
 
 .bg-gray {
     background-color: #bdbdbd;
@@ -67,7 +75,7 @@ a, a:visited, a:hover, a:active {
 
 .navbar {
     box-shadow: 0 2px 5px 0 #757575;
-    padding: 5px;
+    padding: 5px 10px;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -89,25 +97,12 @@ a, a:visited, a:hover, a:active {
     margin: 0 10px;
 }
 
-.navbar__items li:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+.navbar__items li:hover {
+    background-color: #bdbdbd;
 }
 
-.navbar__items li:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+.items__item--active {
+    background-color: #bdbdbd;
 }
 
 .navbar__toggle {
@@ -132,6 +127,11 @@ a, a:visited, a:hover, a:active {
         max-height: 0;
         flex-direction: column;
         transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    }
+
+    .navbar__items li {
+        position: relative;
+        margin: 2px 0;
     }
 
     .navbar__toggle {

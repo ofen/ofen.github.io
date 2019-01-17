@@ -35,13 +35,32 @@ window.onload = function() {
     // Router
     $('.navbar__items li').click(function(e) {
         e.preventDefault();
+        var loadingBlock = `
+            <section class="content">
+                <div class="content__body">
+                    <p>Loading...</p>
+                </div>
+            </section>
+        `;
         var id = this.firstElementChild.id;
         if (pageState !== id) {
+            // Updating current view
             updatePage(id);
+            // Removing active class from each menu items
             $(this).siblings('li').removeClass('items__item--active');
+            // Removing active class from menu
+            $(this).parent().removeClass('navbar__items--active');
+            // Removing active class from menu toggle button
+            $(this).parent().siblings('.navbar__toggle').removeClass('navbar__toggle--active');
+            // Adding active class to clicked item
             $(this).addClass('items__item--active');
-            $('#content').hide().load(`ajax/${pageState}.html`).fadeIn(500);
+            // Injecting page content
+            $('#content').animate({opacity: 0}, 300, function() {
+                $(this).load(`ajax/${pageState}.html`, function() {
+                    $(this).animate({opacity: 1}, 300);
+                });
+            });
+
         }
     });
-
 }
