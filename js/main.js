@@ -55,11 +55,17 @@ window.onload = function() {
             // Adding active class to clicked item
             $(this).addClass('items__item--active');
             // Injecting page content
-            $('#content').animate({opacity: 0}, 300, function() {
-                $(this).load(`ajax/${pageState}.html`, function() {
-                    $('#content').animate({opacity: 1}, 300);
+            $('#content').animate({left: '-5%', opacity: 0}, 700, function() {
+                $(this).css({left: '5%'}).load(`ajax/${pageState}.html`, function() {
+                    $(this).animate({left: '0', opacity: 1}, 700);
                 });
             });
+
+            // $('#content').animate({opacity: 0}, 300, function() {
+            //     $(this).load(`ajax/${pageState}.html`, function() {
+            //         $(this).animate({opacity: 1}, 300);
+            //     });
+            // });
 
         }
     });

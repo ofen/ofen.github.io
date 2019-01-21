@@ -65,21 +65,31 @@ a, a:visited, a:hover, a:active {
     display: none;
     min-height: 100vh;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .site__container {
+    padding-top: 34px; /* padding for navbar */
     flex: 1;
+    position: relative;
 }
 
 /* header section */
 
 .navbar {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
     box-shadow: 0 2px 5px 0 #757575;
-    padding: 5px 10px;
+    z-index: 10;
+}
+
+.navbar__wrapper {
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    z-index: 10;
+    padding: 5px 10px;
 }
 
 .navbar__items {
@@ -119,7 +129,7 @@ a, a:visited, a:hover, a:active {
 
 @media (max-width: 768px) {
 
-    .navbar {
+    .navbar__wrapper {
         flex-direction: column;
     }
 
