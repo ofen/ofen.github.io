@@ -7,11 +7,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="512"
+   height="100"
    id="svg3430"
    version="1.1"
-   viewBox="0 0 512 512"
-   width="512"
+   viewBox="0 0 100 100"
+   width="100"
    xml:space="preserve"
    sodipodi:docname="php-logo.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><sodipodi:namedview
@@ -40,9 +40,9 @@
    inkscape:snap-object-midpoints="true"
    inkscape:snap-text-baseline="true"
    inkscape:snap-page="true"
-   inkscape:zoom="0.59058029"
-   inkscape:cx="365.18752"
-   inkscape:cy="222.56062"
+   inkscape:zoom="2.3623212"
+   inkscape:cx="60.83011"
+   inkscape:cy="47.501438"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
@@ -152,8 +152,10 @@
 <g
    inkscape:groupmode="layer"
    id="layer1"
-   inkscape:label="Layer 1"><g
-     id="g840"><circle
+   inkscape:label="logo"
+   transform="translate(0,-412)"><g
+     id="g840"
+     transform="matrix(0.1953125,0,0,0.1953125,0,412)"><circle
        r="256"
        cy="256"
        cx="256"
