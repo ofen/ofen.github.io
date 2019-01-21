@@ -1,4 +1,9 @@
 window.onload = function() {
+    // Site fade out animation
+    $('body')
+        .css("display", "flex")
+        .hide()
+        .fadeIn(750);
 
     // Menu toggle button
     document.querySelector('.navbar__toggle').addEventListener('click', menuToggle);
@@ -16,11 +21,6 @@ window.onload = function() {
 
     // Copyright in footer
     $('.footer__copyright').html(`${getCurrentYear()} Developed by Ofen`);
-
-    $('body')
-        .css("display", "flex")
-        .hide()
-        .fadeIn(750);
 
     // Page content
     var pageState = 'home';
@@ -57,7 +57,7 @@ window.onload = function() {
             // Injecting page content
             $('#content').animate({opacity: 0}, 300, function() {
                 $(this).load(`ajax/${pageState}.html`, function() {
-                    $(this).animate({opacity: 1}, 300);
+                    $('#content').animate({opacity: 1}, 300);
                 });
             });
 
