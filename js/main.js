@@ -128,12 +128,16 @@ window.onload = function() {
             updatePage(id);
             // Removing active class from each menu items
             $(this).siblings('li').removeClass('items__item--active');
-            // Removing active class from menu
-            $(this).parent().removeClass('navbar__items--active');
-            // Removing active class from menu toggle button
-            $(this).parent().siblings('.navbar__toggle').removeClass('navbar__toggle--active');
+
             // Adding active class to clicked item
             $(this).addClass('items__item--active');
+
+            $(this).parent()
+                // Removing active class from menu
+                .removeClass('navbar__items--active')
+                // Removing active class from menu toggle button
+                .siblings('.navbar__toggle').removeClass('navbar__toggle--active');
+
             // Injecting page content
             // $('#content').pageOut(function() {
             //     var content = $(this);
