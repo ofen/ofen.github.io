@@ -45,27 +45,34 @@ window.onload = function() {
     (function($) {
         $.fn.waitImage = function(callback) {
             var images = this.length;
-            var counter = 0;
-            
-            this.each(function(index, img) {
-                $(img).on('load', incrementCounter);
-            })
 
-            function incrementCounter() {
-                counter++;
+            if (callback) {
 
-                if(counter == images) {
-
-                    if(callback) {
-                        callback.apply(this);
-                    }
-                    
+                if (images == 0) {
+                    callback.apply(this);
                     return this;
                 }
+
+                var counter = 0;
+                
+                this.each(function(index, img) {
+                    $(img).on('load', incrementCounter);
+                })
+
+                function incrementCounter() {
+                    counter++;
+
+                    if(counter == images) {
+                        callback.apply(this);
+                        return this;
+                    }
+                }
+
             }
 
-        }
+            return this;
 
+        }
 
     })(jQuery);
 
