@@ -1,0 +1,32 @@
+{
+  "name": "ofen.github.io",
+  "version": "1.0.0",
+  "description": "Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofen/ofen.github.io.git"
+  },
+  "keywords": [
+    "spa",
+    "homepage",
+    "static",
+    "site"
+  ],
+  "author": "ofen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ofen/ofen.github.io/issues"
+  },
+  "homepage": "https://github.com/ofen/ofen.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^1.1.7"
+  }
+}
