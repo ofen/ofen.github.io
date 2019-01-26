@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 var terser = require('gulp-terser');
 var cleanCSS = require('gulp-clean-css');
 
-// Concat and compress javascript files
+// Concat and compress js files
 gulp.task('js', function() {
     return gulp.src('./src/js/*.js')
         .pipe(concat('script.min.js'))
@@ -25,4 +25,11 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest('./fonts/'));
 });
 
+// Rebuild js and css on change
+gulp.task('watch', function() {
+    gulp.watch('./src/js/*.js', gulp.series('js'));
+    gulp.watch('./src/css/*.css', gulp.series('css'));
+});
+
+// Run all tasks
 gulp.task('deploy', gulp.parallel('js', 'css', 'fonts'));
