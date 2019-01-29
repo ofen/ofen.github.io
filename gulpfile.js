@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var terser = require('gulp-terser');
 var cleanCSS = require('gulp-clean-css');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Concat and compress js files
 gulp.task('js', function() {
@@ -15,6 +16,7 @@ gulp.task('js', function() {
 gulp.task('css', function() {
     return gulp.src(['./src/css/normalize.css', './src/css/fonts.css', './src/css/fontello.css', './src/css/style.css'])
         .pipe(concat('style.min.css'))
+        .pipe(autoprefixer())
         .pipe(cleanCSS({ level: { 1: { specialComments: 0 } } }))
         .pipe(gulp.dest('./css/'));
 });
@@ -26,7 +28,7 @@ gulp.task('fonts', function() {
 });
 
 // Rebuild js and css on change
-gulp.task('watch', function() {
+gulp.task('default', function() {
     gulp.watch('./src/js/*.js', gulp.series('js'));
     gulp.watch('./src/css/*.css', gulp.series('css'));
 });

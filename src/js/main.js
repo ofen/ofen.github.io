@@ -11,9 +11,8 @@ window.onload = function() {
     document.querySelector('.navbar__toggle').addEventListener('click', menuToggle);
 
     function menuToggle(e) {
-        this.classList.toggle('navbar__toggle--active');
-        var sibling = this.nextElementSibling;
-        sibling.classList.toggle('navbar__items--active');
+        var sibling = this.previousElementSibling;
+        sibling.getElementsByClassName('navbar__items')[0].classList.toggle('navbar__items--active');
     }
 
     function getCurrentYear() {

@@ -22,7 +22,9 @@
     "url": "https://github.com/ofen/ofen.github.io/issues"
   },
   "homepage": "https://github.com/ofen/ofen.github.io#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-autoprefixer": "^6.0.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
