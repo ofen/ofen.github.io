@@ -11,8 +11,8 @@ window.onload = function() {
     document.querySelector('.navbar__toggle').addEventListener('click', menuToggle);
 
     function menuToggle(e) {
-        var sibling = this.previousElementSibling;
-        sibling.getElementsByClassName('navbar__items')[0].classList.toggle('navbar__items--active');
+        var parent = this.parentElement;
+        parent.classList.toggle('navbar--active');
     }
 
     function getCurrentYear() {
@@ -71,13 +71,7 @@ window.onload = function() {
     // Router
     $('.navbar__items li').click(function(e) {
         e.preventDefault();
-        var loadingBlock = `
-            <section class="content">
-                <div class="content__body">
-                    <p>Loading...</p>
-                </div>
-            </section>
-        `;
+
         var id = this.firstElementChild.id;
         if (pageState !== id) {
             // Updating current view
@@ -88,9 +82,9 @@ window.onload = function() {
             // Adding active class to clicked item
             $(this).addClass('items__item--active');
 
-            $(this).parent()
+            $(this).parents('.navbar')
                 // Removing active class from menu
-                .removeClass('navbar__items--active')
+                .removeClass('navbar--active')
                 // Removing active class from menu toggle button
                 .siblings('.navbar__toggle').removeClass('navbar__toggle--active');
 
