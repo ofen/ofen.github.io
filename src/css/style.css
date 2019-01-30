@@ -40,7 +40,7 @@ a:active {
     position: relative;
     margin-right: -25px;
     padding: 5px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0, .5);
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
     filter: grayscale(100%);
 }
 
@@ -74,7 +74,6 @@ a:active {
 }
 
 .site__container {
-    padding-top: 50px;
     flex: 1;
     position: relative;
 }
@@ -84,7 +83,7 @@ a:active {
 .navbar {
     width: 100%;
     background-color: #CDDC39;
-    box-shadow: inset 0 -2px 4px 0 rgba(0,0,0, .5);
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
     z-index: 10;
     display: flex;
     justify-content: flex-end;
@@ -110,7 +109,7 @@ a:active {
 .navbar__items li {
     margin: 10px;
     padding: 0 5px;
-    border-radius: .2rem;
+    border-radius: 2px;
 }
 
 .navbar__items li:hover {
@@ -130,6 +129,7 @@ a:active {
     bottom: -44px;
     cursor: pointer;
     z-index: 20;
+    transition: 0.3s ease;
 }
 
 .navbar__toggle::before {
@@ -154,8 +154,8 @@ a:active {
 }
 
 .navbar__toggle:hover {
-    bottom: -49px;
-    height: 55px;
+    bottom: -54px;
+    height: 60px;
 }
 
 @media (max-width: 768px) {
@@ -202,7 +202,7 @@ a:active {
 .form__field {
     margin: 5px 0;
     padding: 10px;
-    border-radius: .2rem;
+    border-radius: 2px;
     border: 1px solid #9E9E9E;
     box-sizing: border-box;
     max-width: 500px;
@@ -221,7 +221,7 @@ a:active {
     margin: 5px 0;
     padding: 10px;
     background-color: #9E9E9E;
-    border-radius: .2rem;
+    border-radius: 2px;
     border-style: none;
     /*background-color: #9E9E9E;*/
     position: relative;
@@ -246,7 +246,7 @@ a:active {
     flex-wrap: wrap;
     padding: 10px;
     background-color: #CDDC39;
-    box-shadow: inset 0 2px 4px 0 rgba(0,0,0, .5);
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
     align-items: center;
     justify-content: space-between;
 }
