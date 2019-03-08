@@ -8,36 +8,36 @@
     <title>Ofen's homepage</title>
 </head>
 <body class="site">
-
-    <!-- header -->
-    <header>
         
-        <!-- navigation -->
-        <nav class="navbar">
-            <ul class="navbar__items">
-                <li class="items__item--active"><a href="#" id="home">Home</a></li>
-                <li><a href="#" id="about">About</a></li>
-                <li><a href="#" id="contacts">Contacts</a></li>
+    <!-- navigation -->
+    <nav class="navbar">
+        <ul class="navbar__items">
+            <li class="items__item--active"><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#" id="contacts">Contacts</a></li>
+        </ul>
+        <span class="navbar__toggle icon-menu" aria-hidden="true"></span>
+
+        <!-- footer -->
+        <footer class="footer">  
+
+            <ul class="footer__links">
+                <li><a href="https://github.com/ofen" target="_blank"><i class="icon-github" aria-hidden="true"></i></a></li>
             </ul>
-            <span class="navbar__toggle icon-menu" aria-hidden="true"></span>
 
-            <!-- footer -->
-            <footer class="footer">  
+            <div class="footer__copyright"></div>
 
-                <ul class="footer__links">
-                    <li><a href="https://github.com/ofen" target="_blank"><i class="icon-github" aria-hidden="true"></i></a></li>
-                </ul>
-
-                <div class="footer__copyright"></div>
-
-            </footer>
-        </nav>
-        
-
-    </header>
+        </footer>
+    </nav>
 
     <!-- main content -->
-    <main class="site__container" id="content"></main>
+    <main class="site__container">
+
+        <div class="modal"></div>
+        
+        <section class="content" id="content"></section>
+
+    </main>
     
     <script src="js/script.min.js"></script>
 

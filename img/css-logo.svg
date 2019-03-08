@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="128.99524"
-     inkscape:cy="59.440059"
+     inkscape:zoom="1.979899"
+     inkscape:cx="28.52002"
+     inkscape:cy="66.814956"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -36,9 +36,9 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:window-width="1366"
-     inkscape:window-height="703"
+     inkscape:window-height="709"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="33"
      inkscape:window-maximized="1"
      units="px"
      inkscape:snap-bbox="true"
@@ -63,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,27 +73,38 @@
      inkscape:label="logo"
      transform="translate(0,-386.25)">
     <g
-       id="g823"
-       transform="matrix(0.19531249,0,0,0.19531249,0,386.25)">
-      <path
-         inkscape:connector-curvature="0"
-         id="path820"
-         d="M 240,0 C 107.45166,0 0,107.45166 0,240 5.5228473e-6,372.54834 107.45166,479.99999 240,479.99999 372.54833,479.99998 479.99998,372.54833 479.99999,240 479.99999,107.45166 372.54834,5.5228473e-6 240,0 Z"
-         style="fill:#2965f1;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <g
-         transform="translate(-1.0000002e-6,18.55964)"
-         id="g826">
-        <path
-           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.0665673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="M 93.438667,73.784254 H 386.56133 L 359.85548,372.9376 239.82085,406.21574 120.11534,372.98552 Z"
-           id="path841"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:#2965f1;fill-opacity:1;stroke:none;stroke-width:1.0665673px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 148.09421,136.1228 3.3358,36.69606 h 140.2605 l -3.33901,37.57685 H 154.70277 l 3.2889,36.69525 h 127.17757 l -4.25941,47.59149 -40.80033,11.01231 -41.02902,-10.98889 -2.61255,-29.26648 h -36.83665 l 5.14105,57.61742 75.33717,20.82038 75.1012,-20.82038 16.69508,-186.93401 z"
-           id="path822"
-           inkscape:connector-curvature="0" />
-      </g>
+       transform="matrix(0.17093285,0,0,0.17093285,-17.224819,333.52718)"
+       id="g840">
+      <polygon
+         transform="translate(119,276.3622)"
+         id="polygon2989"
+         points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 "
+         style="fill:#264de4" />
+      <polygon
+         transform="translate(119,276.3622)"
+         id="polygon2991"
+         points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 "
+         style="fill:#2965f1" />
+      <polygon
+         transform="translate(119,276.3622)"
+         id="polygon2993"
+         points="256,268.217 150.31,268.217 154.38,313.627 256,313.627 "
+         style="fill:#ebebeb" />
+      <polygon
+         transform="translate(119,276.3622)"
+         id="polygon2995"
+         points="256,176.305 255.843,176.305 142.132,176.305 146.26,221.716 256,221.716 "
+         style="fill:#ebebeb" />
+      <polygon
+         transform="translate(119,276.3622)"
+         id="polygon2997"
+         points="156.409,336.333 162.771,407.634 255.791,433.457 256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 "
+         style="fill:#ebebeb" />
+      <polygon
+         transform="translate(119,276.3622)"
+         id="polygon3005"
+         points="311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 369.597,176.305 255.843,176.305 255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 "
+         style="fill:#ffffff" />
     </g>
   </g>
 </svg>

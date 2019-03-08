@@ -3,6 +3,12 @@ var concat = require('gulp-concat');
 var terser = require('gulp-terser');
 var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
+var liveServer = require('live-server');
+
+var params = {
+    port: 8080,
+    hots: '0.0.0.0',
+};
 
 // Concat and compress js files
 gulp.task('js', function() {
@@ -29,6 +35,7 @@ gulp.task('fonts', function() {
 
 // Rebuild js and css on change
 gulp.task('default', function() {
+    liveServer.start(params);
     gulp.watch('./src/js/*.js', gulp.series('js'));
     gulp.watch('./src/css/*.css', gulp.series('css'));
 });

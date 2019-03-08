@@ -17,36 +17,34 @@ a:active {
 /* Utility */
 
 .info {
-
+    max-width: 600px;
 }
 
 .info p {
     color: #7D8186;
-    max-width: 600px;
 }
 
 .icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-right: 25px;
 }
 
 .icons img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     background-color: #fff;
     position: relative;
-    margin-right: -25px;
-    padding: 5px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    /*margin: 2px;*/
+    border: 2px solid #0000;
     filter: grayscale(100%);
+    overflow: hidden;
 }
 
 .icons img:hover {
+    border-color: #bbf085;
     filter: grayscale(0);
-    transform: scale(1.1, 1.1);
+    border-radius: 2px;
+    transform: scale(1.5, 1.5);
     z-index: 10;
 }
 
@@ -84,8 +82,9 @@ a:active {
     width: 100%;
     max-width: 200px;
     height: 100vh;
-    background-color: #CDDC39;
-    z-index: 10;
+    background-color: #bbf085;
+    color: #333;
+    z-index: 20;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -130,6 +129,25 @@ a:active {
     right: -30px;
     cursor: pointer;
     z-index: 20;
+}
+
+.navbar__toggle--active {
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.modal--active {
+    display: block;
 }
 
 /*.navbar__toggle::before {
@@ -202,8 +220,8 @@ a:active {
 .form__field {
     margin: 5px 0;
     padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #9E9E9E;
+    border-radius: 5px;
+    border: 2px solid #e6e6e6;
     box-sizing: border-box;
     max-width: 500px;
     width: 100%;
@@ -211,7 +229,7 @@ a:active {
 
 .form__field:active,
 .form__field:focus {
-    border-color: #afb42b;
+    border-color: #bbf085;
     outline: none;
 }
 
@@ -220,11 +238,12 @@ a:active {
 .btn {
     margin: 5px 0;
     padding: 10px;
-    background-color: #9E9E9E;
-    border-radius: 2px;
-    border-style: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    /*border-style: none;*/
+    border: 2px solid #bbf085;
     position: relative;
-    color: inherit;
+    color: #bbf085;
     cursor: pointer;
     align-self: center;
 }
@@ -235,7 +254,8 @@ a:active {
 
 .btn:active,
 .btn:hover {
-    background-color: #CDDC39;
+    color: #ffffff;
+    background-color: #bbf085;
 }
 
 /* footer section */

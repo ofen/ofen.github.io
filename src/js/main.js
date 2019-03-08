@@ -3,17 +3,19 @@
 window.onload = function() {
     // Site fade in animation
     $('body')
-        // .hide()
-        .css("display", "flex")
-        // .fadeIn(750);
+        .hide()
+        .fadeIn(750);
+
+    function menuToggle(e) {
+        this.classList.toggle('navbar__toggle--active');
+        this.parentElement.classList.toggle('navbar--active');
+        document.querySelector('.modal').classList.toggle('modal--active');
+    }
 
     // Menu toggle button
     document.querySelector('.navbar__toggle').addEventListener('click', menuToggle);
 
-    function menuToggle(e) {
-        var parent = this.parentElement;
-        parent.classList.toggle('navbar--active');
-    }
+
 
     function getCurrentYear() {
         var date = new Date();
@@ -73,6 +75,7 @@ window.onload = function() {
         e.preventDefault();
 
         var id = this.firstElementChild.id;
+
         if (pageState !== id) {
             // Updating current view
             updatePage(id);
@@ -82,11 +85,10 @@ window.onload = function() {
             // Adding active class to clicked item
             $(this).addClass('items__item--active');
 
-            $(this).parents('.navbar')
-                // Removing active class from menu
-                .removeClass('navbar--active')
-                // Removing active class from menu toggle button
-                .siblings('.navbar__toggle').removeClass('navbar__toggle--active');
+            // Removing active class
+            $('.navbar').removeClass('navbar--active');
+            $('.navbar__toggle').removeClass('navbar__toggle--active');
+            $('.modal').removeClass('modal--active');
 
             
             // $('#content').pageOut(function() {
