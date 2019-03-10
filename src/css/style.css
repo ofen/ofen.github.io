@@ -2,8 +2,8 @@ html {
     font-family: 'Roboto Slab';
     font-size: 16px;
     line-height: 1.50;
-    color: rgb(0, 0, 0);
     overflow-y: hidden;
+    color: #333;
 }
 
 a,
@@ -21,7 +21,7 @@ a:active {
 }
 
 .info p {
-    color: #7D8186;
+    color: #777;
 }
 
 .icons {
@@ -34,22 +34,18 @@ a:active {
     height: 50px;
     background-color: #fff;
     position: relative;
-    /*margin: 2px;*/
-    border: 2px solid #0000;
+    padding: 2px;
+    border: 1px solid #0000;
     filter: grayscale(100%);
-    overflow: hidden;
 }
 
 .icons img:hover {
-    border-color: #bbf085;
+    border-color: #777;
     filter: grayscale(0);
-    border-radius: 2px;
+    border-radius: 5px;
     transform: scale(1.5, 1.5);
+    box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.3);
     z-index: 10;
-}
-
-.bg-gray {
-    background-color: #bdbdbd;
 }
 
 /*.display-1 {
